@@ -1,0 +1,123 @@
+ html{
+   width: 100%;
+   height: 100%;
+ }
+ 
+
+ .text{
+    animation-duration: 2s;
+    animation-name: float;
+    animation-iteration-count: infinite; /*How many times it should run */
+    animation-timing-function: ease-in-out; /* Style of animation */
+    text-align: center; /* Keeps the text in the center width wise */
+    z-index: 2;
+    position: relative;
+    top: -74%;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 60px;
+ }
+
+ body{
+   background-color: rgb(13, 7, 48);
+   width: auto;
+   height: 100%;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-end;
+ }
+
+ h1, p{
+   font-family: "Hammersmith One";
+ }
+.header{
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(52, 0, 121);
+  display: block;
+  
+}
+
+.setting{
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.centerhead{
+  width: 750px;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.content{
+  margin-top: 160px;
+  margin-left: 40px;
+  color: white;
+  display: block;
+  font-size: xx-large;
+  width: 500px;
+}
+
+.animations{
+  margin: auto;
+  display: flexbox;
+  flex-direction: column wrap;
+  width: 500px;
+  height: 500px;
+  margin-right: 0;
+}
+
+.logo{
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 50px;
+  color:whitesmoke;
+  display: block;
+  text-align: center;
+  width: auto;
+  position: sticky;
+  margin-top: 10px;
+}
+
+.yinyang{
+  width: 200px;
+  height: 200px;
+  z-index: 999;
+  position: relative;
+  scale: 1.5;
+}
+
+.platform{
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  scale:2;
+}
+
+.off{
+  position: absolute;
+  margin-top: 100px;
+  width: 100px;
+  height: 50px;
+  background-color: blue ;
+  text-align: center;
+  color: aliceblue;
+}
+
+/* These indicate what property the object should have at specific points in the cycle. No longer used thanks to GSAP. */
+
+  @keyframes float {
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0px, -10px); } 
+    100%   { transform: translate(0px, 0px); }     
+  }
+
+  @keyframes float-advanced {
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0px, -10px); rotate: 5deg; scale: 1.5;} 
+    75% {rotate: -5deg;}
+    100%   { transform: translate(0px, 0px); }     
+  }
