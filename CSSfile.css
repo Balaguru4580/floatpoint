@@ -1,59 +1,58 @@
- html{
-   width: 100%;
-   height: 100%;
- }
- 
+html {
+  width: 100%;
+  height: 100%;
+}
 
- .text{
-    animation-duration: 2s;
-    animation-name: float;
-    animation-iteration-count: infinite; /*How many times it should run */
-    animation-timing-function: ease-in-out; /* Style of animation */
-    text-align: center; /* Keeps the text in the center width wise */
-    z-index: 2;
-    position: relative;
-    top: -74%;
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 60px;
- }
+.text {
+  animation-duration: 2s;
+  animation-name: float;
+  animation-iteration-count: infinite; /*How many times it should run */
+  animation-timing-function: ease-in-out; /* Style of animation */
+  text-align: center; /* Keeps the text in the center width wise */
+  z-index: 2;
+  position: relative;
+  top: -74%;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 60px;
+}
 
- body{
-   background-color: rgb(13, 7, 48);
-   width: auto;
-   height: 100%;
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: flex-end;
- }
+body {
+  background-color: rgb(13, 7, 48);
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
 
- h1, p{
-   font-family: "Hammersmith One";
- }
-.header{
+h1,
+p {
+  font-family: "Hammersmith One";
+}
+.header {
   position: fixed;
-  top: 0; 
+  top: 0;
   left: 0;
   width: 100%;
   height: 70px;
   background-color: rgb(52, 0, 121);
   display: block;
-  
 }
 
-.setting{
+.setting {
   width: 50px;
   height: 50px;
   float: left;
 }
 
-.centerhead{
+.centerhead {
   width: 750px;
   height: 100%;
   margin: 0 auto;
   display: block;
 }
 
-.content{
+.content {
   margin-top: 160px;
   margin-left: 40px;
   color: white;
@@ -62,7 +61,7 @@
   width: 500px;
 }
 
-.animations{
+.animations {
   margin: auto;
   display: flexbox;
   flex-direction: column wrap;
@@ -71,10 +70,10 @@
   margin-right: 0;
 }
 
-.logo{
-  font-family: 'Hammersmith One', sans-serif;
+.logo {
+  font-family: "Hammersmith One", sans-serif;
   font-size: 50px;
-  color:whitesmoke;
+  color: whitesmoke;
   display: block;
   text-align: center;
   width: auto;
@@ -82,7 +81,7 @@
   margin-top: 10px;
 }
 
-.yinyang{
+.yinyang {
   width: 200px;
   height: 200px;
   z-index: 999;
@@ -90,34 +89,51 @@
   scale: 1.5;
 }
 
-.platform{
+.platform {
   width: 300px;
   height: 300px;
   z-index: -1;
-  scale:2;
+  scale: 2;
+  filter: drop-shadow(5px 5px 2px rgb(0, 0, 0));
 }
 
-.off{
+.off {
   position: absolute;
   margin-top: 100px;
   width: 100px;
   height: 50px;
-  background-color: blue ;
+  background-color: blue;
   text-align: center;
   color: aliceblue;
 }
 
 /* These indicate what property the object should have at specific points in the cycle. No longer used thanks to GSAP. */
 
-  @keyframes float {
-    0% { transform: translate(0,  0px); } 
-    50%  { transform: translate(0px, -10px); } 
-    100%   { transform: translate(0px, 0px); }     
+@keyframes float {
+  0% {
+    transform: translate(0, 0px);
   }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 
-  @keyframes float-advanced {
-    0% { transform: translate(0,  0px); } 
-    50%  { transform: translate(0px, -10px); rotate: 5deg; scale: 1.5;} 
-    75% {rotate: -5deg;}
-    100%   { transform: translate(0px, 0px); }     
+@keyframes float-advanced {
+  0% {
+    transform: translate(0, 0px);
   }
+  50% {
+    transform: translate(0px, -10px);
+    rotate: 5deg;
+    scale: 1.5;
+  }
+  75% {
+    rotate: -5deg;
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
