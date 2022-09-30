@@ -1,7 +1,7 @@
 # floatpoint
 Animation land.
 
-#Requirements: 
+# Requirements: 
   Basic knowledge of HTML, CSS and Javascript. 
 
   You can contribute to this very easily. Just open the HTML, CSS or JS file in any IDE or even notepad!
