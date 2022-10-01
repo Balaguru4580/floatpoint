@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 h1,
